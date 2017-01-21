@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}MaNabi一覧{% endblock title %}
+{% block extrahead %}
+{% endblock %}
+{% block content %}
+    <div class="row">
+        {% for study in studys %}
+         <div class="col-md-4">
+             <td>{{ study.id }}</td>
+             <td>{{ study.class_name }}</td>
+             <td>{{ study.class_content }}</td>
+             <td>{{ study.target_user }}</td>
+         </div>
+         <div class="col-md-4">
+             <td>{{ study.id }}</td>
+             <td>{{ study.class_name }}</td>
+             <td>{{ study.class_content }}</td>
+             <td>{{ study.target_user }}</td>
+         </div>
+         <div class="col-md-4">
+             <td>{{ study.id }}</td>
+             <td>{{ study.class_name }}</td>
+             <td>{{ study.class_content }}</td>
+             <td>{{ study.target_user }}</td>
+         </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
